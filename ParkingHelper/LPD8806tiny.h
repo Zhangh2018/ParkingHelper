@@ -1,3 +1,6 @@
+#ifndef __LPD8806TINY_H__
+#define __LPD8806TINY_H__
+
 #include <avr/io.h>
 
 struct Color
@@ -150,7 +153,7 @@ struct Color
 	    Gold=0xFFD700,
 	    Goldenrod=0xDAA520,
 	    Gray=0x808080,
-	    Green=0x008000,
+	    Green=0x00FF00,
 	    GreenYellow=0xADFF2F,
 	    Honeydew=0xF0FFF0,
 	    HotPink=0xFF69B4,
@@ -175,7 +178,7 @@ struct Color
 	    LightSlateGray=0x778899,
 	    LightSteelBlue=0xB0C4DE,
 	    LightYellow=0xFFFFE0,
-	    Lime=0x00FF00,
+	    Lime=0x008000,
 	    LimeGreen=0x32CD32,
 	    Linen=0xFAF0E6,
 	    Magenta=0xFF00FF,
@@ -271,3 +274,4 @@ class LPD8806 {
 	bool begun;       // If 'true', begin() method was previously invoked
 };
 
+#endif //__LPD8806TINY_H__

@@ -53,16 +53,16 @@
     </com_atmel_avrdbg_tool_jtagice3plus>
     <avrtoolinterface>debugWIRE</avrtoolinterface>
     <com_atmel_avrdbg_tool_simulator>
-      <ToolOptions xmlns="">
+      <ToolOptions>
         <InterfaceProperties>
           <JtagEnableExtResetOnStartSession>false</JtagEnableExtResetOnStartSession>
         </InterfaceProperties>
-        <InterfaceName>ISP</InterfaceName>
+        <InterfaceName>debugWIRE</InterfaceName>
       </ToolOptions>
-      <ToolType xmlns="">com.atmel.avrdbg.tool.simulator</ToolType>
-      <ToolNumber xmlns="">
+      <ToolType>com.atmel.avrdbg.tool.simulator</ToolType>
+      <ToolNumber>
       </ToolNumber>
-      <ToolName xmlns="">Simulator</ToolName>
+      <ToolName>Simulator</ToolName>
     </com_atmel_avrdbg_tool_simulator>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)' == 'Release' ">
@@ -149,6 +149,18 @@
     </ToolchainSettings>
   </PropertyGroup>
   <ItemGroup>
+    <Compile Include="DistanceSensor.cpp">
+      <SubType>compile</SubType>
+    </Compile>
+    <Compile Include="DistanceSensor.h">
+      <SubType>compile</SubType>
+    </Compile>
+    <Compile Include="LedSequencer.cpp">
+      <SubType>compile</SubType>
+    </Compile>
+    <Compile Include="LedSequencer.h">
+      <SubType>compile</SubType>
+    </Compile>
     <Compile Include="LPD8806tiny.cpp">
       <SubType>compile</SubType>
     </Compile>
